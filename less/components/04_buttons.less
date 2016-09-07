@@ -1,0 +1,58 @@
+.btn {
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	border: none;
+	outline: none;
+	cursor: pointer;
+    transition: 0.35s ease;
+    &:hover {
+      text-decoration: none;
+  }
+  &:focus {
+    text-decoration: none;
+    color: #fff;
+  }
+  &:active {
+    transform: translateY(2px);
+  }
+}
+.btn-blue {
+    color: @blue;
+    font-size: 14px;
+    border: 1px solid #236BAD;
+    border-radius: 5px;
+    background: #EDFBFF;
+    transition: 0.35s ease;
+
+    &:hover {
+        color: @white;
+        border: 1px solid #fff;
+        background: #0f4360;
+    }
+}
+.btn-dark-blue {  
+    font-size: 14px;
+    text-transform: uppercase;  
+    color: #fff;
+    font-weight: 700;
+    border-radius: 5px;    
+    transition: 0.35s ease;
+    background: rgb(35, 108, 173);
+    background: -moz-linear-gradient(270deg, rgb(35, 108, 173) 45%, rgb(22, 177, 221) 80%);
+    background: -webkit-linear-gradient(270deg, rgb(35, 108, 173) 45%, rgb(22, 177, 221) 80%);
+    background: -o-linear-gradient(270deg, rgb(35, 108, 173) 45%, rgb(22, 177, 221) 80%);
+    background: -ms-linear-gradient(270deg, rgb(35, 108, 173) 45%, rgb(22, 177, 221) 80%);
+    background: linear-gradient(0deg, rgb(35, 108, 173) 45%, rgb(22, 177, 221) 80%);
+
+    &:hover {
+        color: #fff;
+        background: rgb(35, 108, 173);
+        background: -moz-linear-gradient(90deg, rgb(35, 108, 173) 45%, rgb(22, 177, 221) 80%);
+        background: -webkit-linear-gradient(90deg, rgb(35, 108, 173) 45%, rgb(22, 177, 221) 80%);
+        background: -o-linear-gradient(90deg, rgb(35, 108, 173) 45%, rgb(22, 177, 221) 80%);
+        background: -ms-linear-gradient(90deg, rgb(35, 108, 173) 45%, rgb(22, 177, 221) 80%);
+        background: linear-gradient(180deg, rgb(35, 108, 173) 45%, rgb(22, 177, 221) 80%);
+
+    }
+}

@@ -1,0 +1,46 @@
+/* --- partners --- */
+.partners-headline {
+    padding-top: 70px;
+}
+#partners-slider {
+    margin-top: 125px;
+}
+#partners-slider .owl-prev,
+#partners-slider .owl-next,
+#testimonials-slider .owl-prev,
+#testimonials-slider .owl-next,
+#certificates-slider .owl-prev,
+#certificates-slider .owl-next {
+    position: absolute;
+    width: 52px;
+    height: 52px;
+    top: 50%;
+    text-indent: -9999px;
+    opacity: 0.5;
+    margin-top: -26px;
+    transition: all 0.4s;
+}
+#certificates-slider .owl-prev,
+#certificates-slider .owl-next {    
+    top: 40%;    
+}
+#partners-slider .owl-prev:hover,
+#partners-slider .owl-next:hover,
+#testimonials-slider .owl-prev:hover,
+#testimonials-slider .owl-next:hover,
+#certificates-slider .owl-prev:hover,
+#certificates-slider .owl-next:hover {    
+    opacity: 1;    
+}
+#partners-slider .owl-prev,
+#testimonials-slider .owl-prev,
+#certificates-slider .owl-prev {
+    left: -70px;
+    background: url("@{dir}part-slider-arrow-prev.png")no-repeat top center;
+}
+#partners-slider .owl-next,
+#testimonials-slider .owl-next,
+#certificates-slider .owl-next {
+    right: -70px;
+    background: url("@{dir}part-slider-arrow-next.png")no-repeat top center;
+}   

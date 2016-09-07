@@ -1,0 +1,54 @@
+/* --- about --- */
+.about {
+    position: relative;
+    width: 100%;
+    min-height: 2000px;
+    background: url("@{dir}about-bg.jpg")no-repeat top center;
+    z-index: 10;
+    padding-top: 230px;
+}
+.about-headline {
+    margin-bottom: 95px;
+}
+.about-item {
+    position: relative;
+    width: 100%;
+    min-height: 353px;
+    background: url("@{dir}about-item-bg.png")no-repeat top center;
+    padding-left: 13px;
+    margin-bottom: 147px;  
+
+    img {
+        width: 100%;
+    }  
+}
+.about-item-2,
+.about-item-4 {
+    margin-left: 15px;
+}
+.about-item-text {
+    position: absolute;
+    width: 80%;
+    height: auto;
+    right: 0;
+    top: 270px;
+    border-radius: 8px 0 0 8px;
+    padding: 45px 20px 45px 40px;
+    /*background: url("@{dir}about-item-text-bg.png")no-repeat top center;*/
+    background: rgb(240, 251, 255);
+    background: -moz-linear-gradient(359deg, rgb(240, 251, 255) 36%, rgb(252, 255, 255) 79%);
+    background: -webkit-linear-gradient(359deg, rgb(240, 251, 255) 36%, rgb(252, 255, 255) 79%);
+    background: -o-linear-gradient(359deg, rgb(240, 251, 255) 36%, rgb(252, 255, 255) 79%);
+    background: -ms-linear-gradient(359deg, rgb(240, 251, 255) 36%, rgb(252, 255, 255) 79%);
+    background: linear-gradient(89deg, rgb(240, 251, 255) 36%, rgb(252, 255, 255) 79%);
+
+    h3 {
+        font-size: 40px;
+        font-weight: 700;
+        color: @dark-blue;
+    }
+    p {
+        font-size: 18px;
+        font-weight: 700;
+    }
+}
