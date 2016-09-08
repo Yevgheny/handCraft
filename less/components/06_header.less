@@ -7,8 +7,11 @@
     z-index: 200;
     margin-bottom: -227px;
 
-    h1 {
-        padding-top: 68px;
+
+    
+
+    h1 {        
+        padding-top: 68px;              
     }
     h3 {
         font-size: 22px;
@@ -17,6 +20,25 @@
         text-align: center;
         padding: 0 60px;
     }
+    
+}
+.main-header .container,
+.bonus .container {
+    position: relative;
+    z-index: 100;
+}
+.main-header:after,
+.bonus:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,0.6);
+    z-index: 0;
+    display: none;
 }
 .main-header-btn {
     padding: 15px 45px;
@@ -39,7 +61,7 @@
 
     a {
         color: #1f2236;
-        font-size: 19px;
+        .fs(@fs19);
         transition: 0.35s ease;
 
         &:hover {
@@ -51,12 +73,12 @@
 .main-sub-headline {
     max-width: 645px;
     text-align: center;
-    font-size: 28px;
+    .fs(@fs28);
     margin: 0 auto 30px;
 }
 .del-info {
     text-align: center;
-    font-size: 22px;
+    .fs(@h4);
     padding-top: 20px;
     margin-bottom: 55px;
 }

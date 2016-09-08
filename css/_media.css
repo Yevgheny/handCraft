@@ -13,22 +13,141 @@
 		margin-top: 35px;
 		max-width: 208px;
 	}
+	.fit-item img {
+		display: none;
+	}
+	.why-we-are {   
+		margin-bottom: -83px;
+		background-size: cover;
+	}
+	.guarantee-item img {
+		max-width: 100%;
+	}
+	.main-header h3 {
+		padding: 0;
+	}
+	.bonus-form-block {
+		padding: 40px 30px;
+	}
+	.bonus-form-block .input-group,
+	.bonus-btn {
+		width: 100%;
+	}
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
+	.main-headline {
+		font-size: 29px;
+	}
+	.main-header {
+		background: url("../images/header-bg.png") no-repeat top left;
+	}
+	.main-header:after {
+		display: block;
+	}
+	.main-header h3 {
+		padding: 0 60px;
+	}
 	.logo-text {
 		max-width: 100%;
 	}
-    .logo-text p {
-    	font-size: 13px;
-    }
-    .main-header-btn {
-    	max-width: 100%;
-    }
-    .goods-cont-form input {
-    	margin-bottom: 15px;
-    } 
+	.logo-text p {
+		font-size: 13px;
+	}
+	.main-header-btn {
+		max-width: 100%;
+	}
+	.goods-cont-form input {
+		margin-bottom: 15px;
+	} 
+	.main-sub-headline::after {
+		bottom: -30px;
+	}
+	.why-we-are {
+		margin-bottom: -120px;    
+	}
+	.fitures-wrap-bad {
+		padding-right: 380px;
+	}
+	.fitures-wrap-good {
+		padding-left: 380px;
+	}
+	.quality-text-wrap { 
+		position: relative; 
+		max-width: 675px;   
+		padding: 20px 33px 20px 38px;    
+	}
+	.quality-info-block {
+		margin-bottom: 85px;
+	}
+	.learn-more-inner h3 {	
+		text-align: center;		
+		padding-top: 20px;
+		padding-left: 0;
+	}
+	.guarantee-item {
+		text-align: center;
+		margin-bottom: 40px;
+	}
+	.guarantee-info {
+		left: 25%;
+	}
+	.author-comments {
+		margin-top: 30px;
+		margin-left: auto;
+	}
+	#partners-slider .owl-prev, 
+	#testimonials-slider .owl-prev, 
+	#certificates-slider .owl-prev,
+	#partners-slider .owl-next, 
+	#testimonials-slider .owl-next, 
+	#certificates-slider .owl-next {
+		display: none;
+	}	
+	.bonus {
+		margin-bottom: 150px;
+	}
+	.bonus-item-left h4 {
+		padding-right: 290px;
+		margin-bottom: 40px;
+	}
+	.bonus-item-left h3 {
+		max-width: 450px;
+	}	 
+	.bonus-form-block {
+		max-width: 500px;
+	}
+	.delivery {   
+		min-height: 895px;
+		background: url("../images/delivery-bg-mob.png") no-repeat top right;		
+	}
+	.main-headline.delivery-headline {
+		padding: 0;
+		margin-top: -150px;
+	}
+	.delivery-info {
+		display: block;
+	}
+	.certificates-item {
+		text-align: center;
+	}
+	.become-partner {
+		background-size: cover;
+		padding-bottom: 50px;
+	}
+	.become-partner-i-block {		
+		margin: 0px auto;
+		text-align: center;
+		padding-top: 15px;
+	}
+	.become-parter-btn {
+		margin: 0 auto;
+	}
+	.main-footer,
+	.production {
+		text-align: center;
+	}	 
 }
 
 /* Small Devices, Tablets */
@@ -55,6 +174,13 @@
 		-ms-animation: none !important;
 		animation: none !important;
 	}
+	.author-comments {
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.remodal-close {		
+		right: 0;
+	}
 
 }
 
@@ -65,31 +191,133 @@
 
 /* Custom, iPhone 6 */
 @media only screen and (max-width : 667px) {
-
+	.author-comments {
+		width: 100%;
+		padding: 52px 10px 25px 20px;
+		background: none;	   
+		background-color: #FEE085;		
+	}
+	.author-comments p {
+		margin-bottom: 20px;
+	}
+	.bonus:after {
+		display: block;
+	}
+	.bonus-item-left h4 {
+		padding-right: 160px;
+	}
+	.fitures-wrap-bad {
+		padding-right: 50%;
+	}
+	.fitures-wrap-good {
+		padding-left: 50%;
+	}
 }
 /* Custom, iPhone 5 */
 @media only screen and (max-width : 568px) {
-
+	.main-header h3 {
+		padding: 0 10px;
+	}
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
-
+	.bonus-item-left h4 {
+		padding-right: 20px;
+	}
+	.delivery-info {		
+		right: 7%;
+		bottom: 10%;
+	}
+	.why-we-are {
+		padding-bottom: 55px;
+	}
+	.fitures-wrap-bad {
+		padding-top: 560px;
+		padding-right: 0;
+		margin-bottom: 60px;
+	}
+	.fitures-wrap-good {
+		padding-top: 560px;
+		padding-left: 0;
+	}
+	.remodal-form .input-group {
+		width: 100%;
+	}
+	.remodal-form {
+		padding: 40px 35px;
+	}
+}
+@media only screen and (max-width : 440px) {
+	.delivery-info {		
+		max-width: 325px;
+		bottom: 7%;
+	}
+	.main-header-dark-blue-btn {
+		bottom: -45px;
+	}
 }
 
 /* Custom, iPhone 6 Plus*/
 @media only screen and (max-width : 414px) {
-
+	/*  Timer */
+	#countbox {    
+		font-size: 33px;
+		height: 93px;
+		line-height: 70px;     
+		width: 320px;    
+	}
+	.main-header-dark-blue-btn {
+		position: relative;
+		left: 0;
+		bottom: 0;
+		margin: 15px 10px;
+		max-width: 100%;
+		padding: 22px 15px;
+	}
+	.about-headline {
+		padding-top: 80px;
+	}
+	#countbox-days-text,#countbox-hours-text,#countbox-mins-text,#countbox-secs-text
+	{		
+		width: 28px;
+		font-size: 16px;		
+	}
+	#countbox .countbox-num {
+		width: 65px;
+	}
+	#countbox-days2:after, 
+	#countbox-hours2:after, 
+	#countbox-mins2:after {
+		right: -21px;
+	}
 }
 
 /* Custom, iPhone 6 */
 @media only screen and (max-width : 375px) {
+	.bonus-form-block {
+		padding: 40px 30px;
+	}
+	.delivery-info {		
+		max-width: 290px;
+		right: 0;
+	}
+	.remodal-form {
+		padding: 40px 20px;
+	}
 
 }
+@media only screen and (max-width : 360px) {
 
+}
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px) {
-
+	#countbox {
+		width: 100%;
+	}
+	#countbox .countbox-num {
+		padding-left: 0;
+	}		 
 }
 
 /* Extra Small Devices, Phones */

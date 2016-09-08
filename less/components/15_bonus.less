@@ -1,5 +1,6 @@
 /*--- bonus --- */
 .bonus {
+    position: relative;
     width: 100%;
     min-height: 915px;
     background: url("@{dir}thinking-form-bg.png")no-repeat top center;
@@ -12,7 +13,7 @@
 .bonus-item-left {
     h3 {
         font-family: @ff2;
-        font-size: 48px;
+        .fs(@fs48);
         font-weight: 700;
         color: @dark-blue;  
         padding-top: 40px;
@@ -20,14 +21,15 @@
     }
     span {
         display: block;
-        font-size: 90px;
+        .fs(@fs90);
         color: @pinky;
         text-transform: uppercase;
         letter-spacing: 6px;
     }
     h4 {
-        font-size: 28px;
-        margin: 0;
+        .fs(@fs28);
+        padding-right: 110px;
+        margin: 0 0 20px 0;
 
         span {
             font-size: 28px;
@@ -39,7 +41,8 @@
         }
     }
 }
-.bonus-form-block {
+.bonus-form-block,
+.remodal-form {
     width: 100%;
     min-height: 510px;
     background-color: #FEDF84;
@@ -79,3 +82,103 @@
     width: 270px;
     height: 60px;
 }
+/*  Timer */
+#countbox {
+    color: #0f4360;
+    font-family: @ff;
+    font-size: 36px;
+    height: 93px;
+    line-height: 70px;    
+    padding: 0;
+    width: 385px;
+    font-weight: 700;
+    background: #fff;
+    border: 1px solid #A1DAE4;
+    border-radius: 3px;
+    margin-bottom: 50px;
+}
+#countbox .countbox-num {
+    width: 86px;
+    height: 100px;
+    float: left;
+    font-family: @ff;
+    text-align: center;     
+    padding-left: 15px;
+}
+#countbox .countbox-space
+{
+    float: left;
+    height: 90px;
+    width: 8px;
+}
+#countbox-days1,#countbox-hours1,#countbox-mins1,#countbox-secs1,#countbox-days2,#countbox-hours2,#countbox-mins2,#countbox-secs2
+{
+    background-image: url('../images/flip.png');
+    background-repeat: no-repeat;
+    float: left;
+    height: 67px;
+    margin: 0 -4px 0 0;
+    padding-left: 10px;
+    text-align: center;
+    width: 27px;
+    z-index: 1;
+}
+#countbox .countbox-num__sec {    
+    color: @pinky;
+}
+#countbox-days-text,#countbox-hours-text,#countbox-mins-text,#countbox-secs-text
+{
+ margin-top: 0.8rem;
+ position: relative;
+ width: 2.8rem;
+ font-size: 1.8rem;
+ color: #0f4360;
+}
+#countbox-days-text:before {
+ position: absolute;
+ top: 25px;
+ left: 10px;
+ display: block;
+ content: "день";
+}
+#countbox-hours-text:before {
+ position: absolute;
+ top: 25px;
+ left: 10px;
+ display: block;
+ content: "часов";
+}
+#countbox-mins-text:before {
+ content: "минут";
+ position: absolute;
+ top: 25px;
+ left: 10px;
+ display: block;
+}
+#countbox-secs-text:before {
+ content: "секунд";
+ position: absolute;
+ top: 25px;
+ left: 5px;
+ display: block;
+ color: @pinky;
+}
+#countbox-days2,
+#countbox-hours2,
+#countbox-mins2 {
+    position: relative;
+}
+#countbox-days2:after,
+#countbox-hours2:after,
+#countbox-mins2:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 7px;
+    height: 19px;
+    top: 52%;
+    right: -26px;
+    background: url("@{dir}timer-separator-bg.jpg")no-repeat top center;
+}
+/*  End Timer */
+

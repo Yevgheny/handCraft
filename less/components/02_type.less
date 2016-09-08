@@ -19,42 +19,42 @@ h1 {
 	margin: @text-margin;
 }
 h2 {
-	font-size: @h2; 
+	.fs(@h2); 
 	font-weight: 400; 
 	line-height: @lh; 
 	color: @text-color; 
 	margin: @text-margin;
 }
 h3 {
-	font-size: @h3; 
+	.fs(@h3); 
 	font-weight: 400; 
 	line-height: @lh; 
 	color: @text-color; 
 	margin: @text-margin;
 }
 h4 {
-	font-size: @h4; 
+	.fs(@h4); 
 	font-weight: 400; 
 	line-height: @lh; 
 	color: @text-color; 
 	margin: @text-margin;
 }
 h5 {
-	font-size: @h5; 
+	.fs(@h5); 
 	font-weight: 400; 
 	line-height: @lh; 
 	color: @text-color; 
 	margin: @text-margin;
 }
 h6 {
-	font-size: @h6; 
+	.fs(@h6); 
 	font-weight: 400; 
 	line-height: @lh; 
 	color: @text-color; 
 	margin: @text-margin;
 }
 a {
-	font-size: @fs; 
+	.fs(@fs); 
 	line-height: @lh; 
 	color: @text-color; 
 	margin: @text-margin;
@@ -65,7 +65,7 @@ a {
 .main-headline {
 	position: relative;
 	font-family: @ff2;
-	.fs(@h2);
+	font-size: 36px;
 	font-weight: 300;
 	text-align: center;	
 	color: @dark-blue;
@@ -87,6 +87,7 @@ a {
 .main-headline::after {
 	bottom: -34px;
 }
+
 
 
 .align-right {text-align: right;}
